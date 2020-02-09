@@ -49,7 +49,7 @@ Dependencies that one has to provide to be able to run the utility are as follow
     "cli": {
         "commands": [{
             "desc": "Entry point to the program",
-            "template": "node cli.js [<list of chosen params>] [-- <space-separated contents for blocks>]",
+            "template": "node cli.js [<list of chosen params>] [-- <space-separated list of pieces of contents of particular blocks>]",
             "params": {
                 "-w": {
                     "long-name": "--block-width",
