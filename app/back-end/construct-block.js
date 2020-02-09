@@ -238,9 +238,6 @@ function validateContentConfig(contentConfig) {
  * @returns {string} a string representing the constructed block
  */
 exports.constructBlock = function (blockConfig, contentConfig) {
-	console.debug(`blockConfig.sizesConfig === `, blockConfig.sizesConfig);
-	console.debug(`blockConfig.insideChar === "${blockConfig.insideChar}"`);
-
 	validateBlockConfig(blockConfig); // throws in case of an error
 	validateContentConfig(contentConfig); // throws in case of an error
 
@@ -456,8 +453,6 @@ exports.constructBlock = function (blockConfig, contentConfig) {
 
 						const overflowSignalString = "...";
 
-						console.debug(`contentParts, maxDeclaredBlockInsideHeight - 1 === `, contentParts, ` `, maxDeclaredBlockInsideHeight - 1);
-
 						const lastContentLine =
 							constructBlockLine({
 								left: {
@@ -493,8 +488,6 @@ exports.constructBlock = function (blockConfig, contentConfig) {
 					}
 
 					// Construct the remainder middle lines
-
-					console.log(`underflow === `, underflow);
 
 					const remainderMiddleLinesNumber =
 						(underflow === true
@@ -640,9 +633,6 @@ exports.constructBlock = function (blockConfig, contentConfig) {
 			.concat(bottomPaddingMiddleLines)
 			.concat(bottomBorderLines)
 	})(blockConfig, contentConfig);
-
-	console.log(`block === `, block);
-	console.log();
 
 	return block;
 }

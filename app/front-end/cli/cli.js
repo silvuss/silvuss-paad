@@ -102,8 +102,6 @@ try {
 
     const properArgs = parseArgs(process.argv.slice(2), "--", argsConfig);
 
-    console.debug(properArgs);
-
     const schemaConfig = {
         sizesConfig: {
             colsNumber: properArgs["-c"] !== undefined
