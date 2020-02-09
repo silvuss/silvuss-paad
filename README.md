@@ -1,6 +1,37 @@
-paas (**p**rint **A**SCII **a**rt **s**chema)
+# paas – print ASCII art schema
 
-## Dependencies that one has to provide to be able to run the utility
+paas (**p**rint **A**SCII **a**rt **s**chema) is a utility that allows the user to generate a schema in a form similar (the same?) to ASCII art.
+
+**Read before use:** This application **is not** intended to be used according to the purpose described above. You may use it **only** to test whether the code is written the way it is expected to be (i.e. it produces expected results) and **only** when you know what the code will really do. For details, see the section "[Disclaimers](#disclaimers)" below.
+
+1. [Copyright note](#copyright-note)
+2. [Disclaimers](#disclaimers)
+3. [Dependencies](#dependencies)
+4. [Usage](#usage)
+5. [Environments, tools and technologies used](#environments-tools-and-technologies-used)
+6. [Exceptions thrown by the utility](#exceptions-thrown-by-the-utility)
+7. [Sources](#sources)
+8. [Notes](#notes)
+
+## Copyright note
+
+Note that this project "paas" (the repository "silvuss-paas") has currently **no license**, as explained in [this GitHub guide on licensing projects](https://choosealicense.com/no-permission/).
+
+For your convenience, I am including below a quote from that site:
+
+> When you make a creative work (which includes code), the work is under exclusive copyright by default. Unless you include a license that specifies otherwise, nobody else can use, copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or litigation. Once the work has other contributors (each a copyright holder), “nobody” starts including you.
+
+Also note that I can add a license in the future if it would be relevant to the needs of this project.
+
+## Disclaimers
+
+**The application that this project contains is an example application that is not intended to be run.** Its purpose is only to show code that is known to work. While probably nothing dangerous would happen, you may run it only under your own responsibility.
+
+Although I have made efforts to make it work as intended and described, it is not a "professional" application. Specifically, it was not tested in terms of separate unit tests or similar. It was tested to build and work on only one platform. For details on the platform, see the section "[Environment, tools and technologies used](#environment-tools-and-technologies-used)" below.
+
+## Dependencies
+
+Dependencies that one has to provide to be able to run the utility are as follows:
 
 ```json
 [
@@ -11,7 +42,7 @@ paas (**p**rint **A**SCII **a**rt **s**chema)
 ]
 ```
 
-## Ways to run the utility
+## Usage
 
 ```json
 {
@@ -74,7 +105,7 @@ paas (**p**rint **A**SCII **a**rt **s**chema)
 }
 ```
 
-## Platforms that the utility was tested to work on
+## Environments, tools and technologies used
 
 ```json
 [
@@ -96,7 +127,7 @@ paas (**p**rint **A**SCII **a**rt **s**chema)
 
 [TODO]
 
-## Helpful sources
+## Sources
 
 ```json
 [
@@ -124,7 +155,9 @@ paas (**p**rint **A**SCII **a**rt **s**chema)
 ]
 ```
 
-## Code notes
+## Notes
+
+### Code notes
 
 ```json
 [
