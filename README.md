@@ -49,7 +49,7 @@ Dependencies that one has to provide to be able to run the utility are as follow
     "cli": {
         "commands": [{
             "desc": "Entry point to the program",
-            "template": "node cli.js <optional list of chosen params>",
+            "template": "node cli.js [<list of chosen params>] [-- <space-separated contents for blocks>]",
             "params": {
                 "-w": {
                     "long-name": "--block-width",
@@ -92,12 +92,6 @@ Dependencies that one has to provide to be able to run the utility are as follow
                     "values-type": "(character)",
                     "default-value": "(none)",
                     "desc": "Required; the character of the schema's fill"
-                },
-                "(no-name)": {
-                    "long-name": "(no-name)",
-                    "values-type": "(a list of strings)",
-                    "default-value": "(an empty list)",
-                    "desc": "Contents of the blocks; to be recognized correctly, it must be separated by '--' (double dash) from the rest of the arguments"
                 }
             }
         }]
