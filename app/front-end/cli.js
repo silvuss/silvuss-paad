@@ -1,7 +1,7 @@
 const process = require("process");
 const parseArgsList = require("./parse-args").parseArgsList;
-const createBlock = require("../back-end2/block/create-block").createBlock;
-const createSchema = require("../back-end2/schema/create-schema").createSchema;
+const createBlock = require("../back-end/block/create-block").createBlock;
+const createSchema = require("../back-end/schema/create-schema").createSchema;
 
 const {
     contentBlockConfig,
