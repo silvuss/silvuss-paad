@@ -8,6 +8,7 @@ paas (**p**rint **A**SCII **a**rt **s**chema) is a utility that allows the user 
 2. [Disclaimers](#disclaimers)
 3. [Dependencies](#dependencies)
 4. [Usage](#usage)
+5. [Examples](#examples)
 5. [Environments, tools and technologies used](#environments-tools-and-technologies-used)
 6. [Exceptions thrown by the utility](#exceptions-thrown-by-the-utility)
 7. [Sources](#sources)
@@ -51,17 +52,45 @@ Dependencies that one has to provide to be able to run the utility are as follow
             {
                 "desc": "Entry point to the program",
                 "template": "node app/front-end/cli.js [<list of chosen params>] [-- [<space-separated list of pieces of contents of particular blocks>]]",
-                "params": "(all the params are defined in the file app/front-end/params-config.js)",
-                "examples": [
-                    {
-                        "command": "node cli.js -s 2 " " -b 1 '#' -p 1 -c 3 -f ' ' -- 'a b' 'c' 'd' 'e' 'f g h' 'i' 'j k' 'l m n o' 'p'",
-                        "desc": "Produces a grid of 9 blocks, each with paddings 1 character wide, borders one characters wide and of the # char; the content constitutes a couple of consecutive alphabet letters"
-                    }
-                ]
+                "params": "(all the params are defined in the file app/front-end/params-config.js)"
             }
         ]
     }
 }
+```
+
+## Examples
+
+#### Example 1
+
+The command:
+
+```
+node cli.js -s 2 " " -b 1 '#' -p 1 -c 3 -f ' ' -- 'a b' 'c' 'd' 'e' 'f g h' 'i' 'j k' 'l m n o' 'p'
+```
+
+produces the following schema:
+
+```
+###########  ###########  ###########
+#         #  #         #  #         #
+# a b     #  # c       #  # d       #
+#         #  #         #  #         #
+###########  ###########  ###########
+                                     
+                                     
+###########  ###########  ###########
+#         #  #         #  #         #
+# e       #  # f g h   #  # i       #
+#         #  #         #  #         #
+###########  ###########  ###########
+                                     
+                                     
+###########  ###########  ###########
+#         #  #         #  #         #
+# j k     #  # l m n o #  # p       #
+#         #  #         #  #         #
+###########  ###########  ###########
 ```
 
 ## Environments, tools and technologies used
