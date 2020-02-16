@@ -19,9 +19,7 @@ exports.createSchema = function (
     const rowsNumber
         = (actualColsNumber === 0)
             ? 0
-            : Math.ceil(
-                contentRowContentBlocks.length / actualColsNumber
-            );
+            : Math.ceil(contentRowContentBlocks.length / actualColsNumber);
 
     const contentRowSeparatorBlocks = (
         (separatorBlockConfig) => {
