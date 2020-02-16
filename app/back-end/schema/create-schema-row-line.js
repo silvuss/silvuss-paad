@@ -3,8 +3,6 @@ const constructSchemaRowLine
 const arrayUtils = require("../utils/array-utils");
 
 exports.createSchemaRowLine = function (encompassingParts, encompassedParts) {
-    // console.debug("createSchemaRowLine:");
-
     return constructSchemaRowLine(
         {
             encompassing: encompassingParts,

@@ -3,9 +3,6 @@ const provideDefaultValues
     = require("./provide-default-values").provideDefaultValues;
 
 exports.validateAndConvertArgs = function (args, contents) {
-    // console.debug("validateArgs: args ===", args);
-    // console.debug("validateArgs: contents ===", contents);
-
     // Check whether all provided arguments are valid parameters' names/values
     args.forEach(a => {
         const paramConfig = paramsConfigs[a.name];

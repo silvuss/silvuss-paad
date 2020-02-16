@@ -3,9 +3,6 @@ const constructBlockPartLine
 const constructBlockPart = require("./construct-block-part").constructBlockPart;
 
 exports.createTopBlockPart = function (blockConfig) {
-    // console.debug("createTopBlockPart -> blockConfig.innerWidth ===", blockConfig.innerWidth);
-    // console.debug("createTopBlockPart -> blockConfig.borders.top.width ===", blockConfig.borders.top.width);
-
     const partLines = [];
 
     for (let i = 0; i < blockConfig.borders.top.width; ++i) {

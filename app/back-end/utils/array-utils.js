@@ -35,10 +35,6 @@ exports.splitArray = function (array, isSeparator) {
 
 exports.joinElemsWithElems
     = function (encompassingElems, encompassedElems, join) {
-        // console.debug("joinElemsWithElems: encompassingElems ===", encompassingElems);
-        // console.debug("joinElemsWithElems: encompassedElems ===", encompassedElems);
-        // console.debug("joinElemsWithElems: join ===", join);
-
         try {
             if (Array.isArray(encompassingElems) === false) {
                 throw Error("It is not an array:", encompassingElems);

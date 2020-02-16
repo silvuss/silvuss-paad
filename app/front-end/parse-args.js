@@ -2,10 +2,6 @@ const validateAndConvertArgs = require("./validate-and-convert-args").validateAn
 
 // Invoke like parseArgsList(argsList).validateArgs().getConfig()
 exports.parseArgsList = function (argsList, isParamName, isContentSeparator) {
-    // console.debug("parseArgsList: argsList ===", argsList);
-    // console.debug("parseArgsList: isParamName ===", isParamName);
-    // console.debug("parseArgsList: isContentSeparator ===");
-
     const args = [];
 
     // Split for contents arguments and "proper args" arguments
