@@ -37,11 +37,11 @@ exports.joinElemsWithElems
     = function (encompassingElems, encompassedElems, join) {
         try {
             if (Array.isArray(encompassingElems) === false) {
-                throw Error("It is not an array:", encompassingElems);
+                throw Error("It is not an array: ", encompassingElems);
             }
 
             if (Array.isArray(encompassedElems) === false) {
-                throw Error("It is not an array:", encompassedElems);
+                throw Error("It is not an array: ", encompassedElems);
             }
 
             if (encompassingElems.length === 0
