@@ -157,6 +157,12 @@ produces the following schema:
     },
     {
         "url": "https://www.jstips.co/en/javascript/create-range-0/.n-easily-using-one-line/"
+    },
+    {
+        "url": "https://stackoverflow.com/q/22053757"
+    },
+    {
+        "url": "https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase"
     }
 ]
 ```
