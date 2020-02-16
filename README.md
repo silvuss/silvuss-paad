@@ -47,47 +47,19 @@ Dependencies that one has to provide to be able to run the utility are as follow
 ```json
 {
     "cli": {
-        "commands": [{
-            "desc": "Entry point to the program",
-            "template": "node cli.js [<list of chosen params>] [-- <space-separated list of pieces of contents of particular blocks>]",
-            "params": {
-                "-w": {
-                    "values-type": "(integer >= 0)",
-                    "default-value": "'0'",
-                    "desc": "Optional; the width of a block (including border)"
-                },
-                "-h": {
-                    "values-type": "((integer >= 0) (integer >= 0))",
-                    "default-value": "(none) (none)",
-                    "desc": "Required; the values for the height of a block: minimum, maximum (including borders)"
-                },
-                "-b": {
-                    "values-type": "((integer >= 0) (('') || (character)))",
-                    "default-value": "'0' ''",
-                    "desc": "Optional; the configuration of borders of a block: borders' size, borders' character"
-                },
-                "-p": {
-                    "values-type": "(integer >= 0)",
-                    "default-value": "'0'",
-                    "desc": "Optional; the configuration of paddings of a block: paddings' size"
-                },
-                "-s": {
-                    "values-type": "((integer >= 0) (('') || (character)))",
-                    "default-value": "'0' ''",
-                    "desc": "Optional; the configuration of separators between blocks: separators' size, separators' fill's character"
-                },
-                "-c": {
-                    "values-type": "(integer >= 0)",
-                    "default-value": "(the number of provided contents strings)",
-                    "desc": "Optional; the number of columns in the schema"
-                },
-                "-f": {
-                    "values-type": "(character)",
-                    "default-value": "(none)",
-                    "desc": "Required; the character of the schema's fill"
-                }
+        "commands": [
+            {
+                "desc": "Entry point to the program",
+                "template": "node app/front-end/cli.js [<list of chosen params>] [-- [<space-separated list of pieces of contents of particular blocks>]]",
+                "params": "(all the params are defined in the file app/front-end/params-config.js)",
+                "examples": [
+                    {
+                        "command": "node cli.js -s 2 " " -b 1 '#' -p 1 -c 3 -f ' ' -- 'a b' 'c' 'd' 'e' 'f g h' 'i' 'j k' 'l m n o' 'p'",
+                        "desc": "Produces a grid of 9 blocks, each with paddings 1 character wide, borders one characters wide and of the # char; the content constitutes a couple of consecutive alphabet letters"
+                    }
+                ]
             }
-        }]
+        ]
     }
 }
 ```
@@ -97,14 +69,32 @@ Dependencies that one has to provide to be able to run the utility are as follow
 ```json
 [
     {
-        "operating-system": {
-            "family-name": "Linux",
-            "distribution-name": "Fedora",
-            "version": "Fedora release 30 (Thirty)"
+        "development": {
+            "programming-languages": [
+                {
+                    "name": "JavaScript",
+                    "notes": [
+                        "ECMAScript verson: 2018",
+                        "runtime-environment: Node.js v10.16.3"
+                    ]
+                }
+            ],
+            "operating-systems": [
+                {
+                    "family-name": "Linux",
+                    "distribution-name": "Fedora",
+                    "version": "Fedora release 30 (Thirty)"
+                }
+            ]
         },
-        "javascript-runtime-environment": {
-            "name": "Node.js",
-            "version": "v10.16.3"
+        "testing": {
+            "operating-systems": [
+                {
+                    "family-name": "Linux",
+                    "distribution-name": "Fedora",
+                    "version": "Fedora release 30 (Thirty)"
+                }
+            ]
         }
     }
 ]
@@ -149,5 +139,15 @@ Dependencies that one has to provide to be able to run the utility are as follow
 ```json
 [
     "The order of properties top, right, etc. is the same as in CSS's border's shorthand properties."
+]
+```
+
+### Resources worth attention
+
+```json
+[
+    {
+        "url": "https://4programmers.net/Forum/JavaScript/336248-jak_mapowac_argumenty_wiersza_polecen_na_wywolania_funkcji?p=1654291#id1654291"
+    }
 ]
 ```
