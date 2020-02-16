@@ -1,7 +1,4 @@
 const constructBlock = require("./construct-block").constructBlock;
-const constructBlockPart = require("./construct-block-part").constructBlockPart;
-const constructBlockPartLine
-    = require("./construct-block-part-line").constructBlockPartLine;
 const createTopBlockPart
     = require("./create-top-block-part").createTopBlockPart;
 const createMiddleTopBlockPart
