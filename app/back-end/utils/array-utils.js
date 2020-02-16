@@ -48,6 +48,19 @@ exports.joinElemsWithElems
                 throw Error("It is not an array:", encompassedElems);
             }
 
+            if (encompassingElems.length === 0
+                && encompassedElems.length === 0) {
+                return join([]);
+            }
+
+            if (encompassingElems.length - 1 !== encompassedElems.length) {
+                throw Error(
+                    `The arrays have their lengths incompatible with each `
+                    + `other: ${encompassingElems.length}, `
+                    + `${encompassedElems.length}`
+                );
+            }
+
             const result = [];
 
             for (let i = 0; i < encompassingElems.length - 1; ++i) {
@@ -62,17 +75,19 @@ exports.joinElemsWithElems
         }
     };
 
-exports.joinArrayWithArray = function (encompassingElems, encompassedElems) {
-    try {
-        return module.exports.joinElemsWithElems(
-            encompassingElems,
-            encompassedElems,
-            (result) => result.reduce((r, c) => r.concat(c), [])
-        );
-    } catch (e) {
-        throw Error("joinArrayWithArray: " + e.message);
-    }
-};
+exports.joinArrayWithArray
+    = function (encompassingElems, encompassedElems, separator) {
+        try {
+            return module.exports.joinElemsWithElems(
+                encompassingElems,
+                encompassedElems,
+                (result) =>
+                    result.reduce((r, c) => r.concat(separator).concat(c))
+            );
+        } catch (e) {
+            throw Error("joinArrayWithArray: " + e.message);
+        }
+    };
 
 exports.joinStringsWithStrings
     = function (encompassingElems, encompassedElems, separator) {
@@ -80,7 +95,10 @@ exports.joinStringsWithStrings
             return module.exports.joinElemsWithElems(
                 encompassingElems,
                 encompassedElems,
-                (result) => result.reduce((r, c) => r + separator + c, "")
+                (result) =>
+                    (result.length === 0)
+                        ? ""
+                        : result.reduce((r, c) => r + separator + c)
             );
         } catch (e) {
             throw Error("joinStringsWithStrings: " + e.message);

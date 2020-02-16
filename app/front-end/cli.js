@@ -17,9 +17,10 @@ const {
     .getConfig();
 
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max#Getting_the_maximum_element_of_an_array
-const maxContentLength = contents
-    .map((x) => x.length)
-    .reduce((x, y) => Math.max(x, y));
+const maxContentLength
+    = (contents.length === 0)
+        ? undefined
+        : contents.map((x) => x.length).reduce((x, y) => Math.max(x, y));
 
 const contentRowContentBlocks = contents.map(content =>
     createBlock(contentBlockConfig, content, maxContentLength)
