@@ -1,0 +1,7 @@
+# Project's conventions notes
+
+## Naming "things"
+
+Naming a "thing" (a variable, a function, a file etc.) should involve, among others, looking for compromise, in a given context, between the possibility of a "thing"'s name to be (or just look) confusing in this context (e.g., by being ambiguous – like `x`, `db`, `fn`) and the possibility of it to be prone to typos.
+
+For example, `argList` seems to be less prone to typos than `args`. But, on the other hand, `argList` in a function name may be more confusing than `args` if the "list" that the name refers to may in many enough cases (situations) (or just in any cases) be understood differently than the author(s) of the function name expected. It may happen when this "list" will be mostly, in fact, an object (although even treated as some kind of "list", like you may say in the case of JavaScript). The other time, it may happen when there is just an assumption (or even possibility) that its type (or something else) varies. Examples of the second case include a case when in one case the "list" may be of an `Array` type, an in some other case it may be of a `List` type; the name of the function that refers to this "list" in both situations as "list" may then become ambiguous.
