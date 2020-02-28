@@ -183,6 +183,9 @@ produces the following diagram:
 [
     {
         "url": "https://4programmers.net/Forum/JavaScript/336248-jak_mapowac_argumenty_wiersza_polecen_na_wywolania_funkcji?p=1654291#id1654291"
+    },
+    {
+        "url": "https://cs.stackexchange.com/questions/92740/why-is-it-called-throwing-an-exception"
     }
 ]
 ```
