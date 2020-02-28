@@ -1,6 +1,6 @@
-# paas – print ASCII art schema
+# paad – print ASCII art diagram
 
-paas (**p**rint **A**SCII **a**rt **s**chema) is a utility that allows the user to generate a schema in a form similar (the same?) to ASCII art.
+paas (**p**rint **A**SCII **a**rt **s**chema) is a utility that allows the user to generate a diagram in a form similar (the same?) to ASCII art.
 
 **Read before use:** This application **is not** intended to be used according to the purpose described above. You may use it **only** to test whether the code is written the way it is expected to be (i.e. it produces expected results) and **only** when you know what the code will really do. For details, see the section "[Disclaimers](#disclaimers)" below.
 
@@ -69,7 +69,7 @@ The command:
 node cli.js -s 2 " " -b 1 '#' -p 1 -c 3 -f ' ' -- 'a b' 'c' 'd' 'e' 'f g h' 'i' 'j k' 'l m n o' 'p'
 ```
 
-produces the following schema:
+produces the following diagram:
 
 ```
 ###########  ###########  ###########
