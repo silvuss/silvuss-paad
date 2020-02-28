@@ -34,6 +34,7 @@ Although I have made efforts to make it work as intended and described, it is no
 
 Dependencies that one has to provide to be able to run the utility are as follows:
 
+(JSON)
 ```json
 [
     {
@@ -45,6 +46,7 @@ Dependencies that one has to provide to be able to run the utility are as follow
 
 ## Usage
 
+(JSON)
 ```json
 {
     "cli": {
@@ -95,6 +97,7 @@ produces the following diagram:
 
 ## Environments, tools and technologies used
 
+(JSON)
 ```json
 [
     {
@@ -135,6 +138,7 @@ produces the following diagram:
 
 ## Sources
 
+(JSON)
 ```json
 [
     {
@@ -201,6 +205,7 @@ produces the following diagram:
 
 ### Code notes
 
+(JSON)
 ```json
 [
     "The order of properties top, right, etc. is the same as in CSS's border's shorthand properties."
@@ -209,6 +214,7 @@ produces the following diagram:
 
 ### Resources worth attention
 
+(JSON)
 ```json
 [
     {
