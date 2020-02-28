@@ -51,7 +51,7 @@ Dependencies that one has to provide to be able to run the utility are as follow
         "commands": [
             {
                 "desc": "Entry point to the program",
-                "template": "node app/front-end/cli.js [<list of chosen params>] [-- [<space-separated list of pieces of contents of particular blocks>]]",
+                "template": "node app/front-end/cli.js [<list of chosen params>] [-- [<space-separated list of pieces of contents of particular boxes>]]",
                 "params": "(all the params are defined in the file app/front-end/params-config.js)"
             }
         ]
