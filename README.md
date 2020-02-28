@@ -150,7 +150,7 @@ produces the following diagram:
         "url": "https://ultimatecourses.com/blog/understanding-javascript-types-and-reliable-type-checking"
     },
     {
-        "url": "https://jsdoc.app/tags-typedef.html"
+        "url": "https://jsdoc.app/"
     },
     {
         "url": "https://stackoverflow.com/a/10462275"
@@ -163,6 +163,36 @@ produces the following diagram:
     },
     {
         "url": "https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase"
+    },
+    {
+        "url": "https://github.com/jsdoc/jsdoc/issues/1537#issuecomment-457231965"
+    },
+    {
+        "url": "https://code.visualstudio.com/docs/getstarted/settings"
+    },
+    {
+        "url": "https://github.com/Microsoft/TypeScript/wiki/Type-Checking-JavaScript-Files"
+    },
+    {
+        "url": "https://code.visualstudio.com/docs/languages/jsconfig"
+    },
+    {
+        "url": "https://www.typescriptlang.org/docs/handbook/compiler-options.html"
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Coupling_(computer_programming)"
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Law_of_Demeter"
+    },
+    {
+        "url": "https://git-scm.com/docs/gitignore"
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Principle_of_least_astonishment"
+    },
+    {
+        "url": "https://js-bits.blogspot.com/2010/08/constructors-without-using-new.html"
     }
 ]
 ```
