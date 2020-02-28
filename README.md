@@ -1,6 +1,6 @@
 # paad – print ASCII art diagram
 
-paas (**p**rint **A**SCII **a**rt **s**chema) is a utility that allows the user to generate a diagram in a form similar (the same?) to ASCII art.
+paad (**p**rint **A**SCII **a**rt **d**iagram) is a utility that allows the user to generate a diagram in a form similar (the same?) to ASCII art.
 
 **Read before use:** This application **is not** intended to be used according to the purpose described above. You may use it **only** to test whether the code is written the way it is expected to be (i.e. it produces expected results) and **only** when you know what the code will really do. For details, see the section "[Disclaimers](#disclaimers)" below.
 
@@ -16,7 +16,7 @@ paas (**p**rint **A**SCII **a**rt **s**chema) is a utility that allows the user 
 
 ## Copyright note
 
-Note that this project "paas" (the repository "silvuss-paas") has currently **no license**, as explained in [this GitHub guide on licensing projects](https://choosealicense.com/no-permission/).
+Note that this project "paad" (the repository "silvuss-paad") has currently **no license**, as explained in [this GitHub guide on licensing projects](https://choosealicense.com/no-permission/).
 
 For your convenience, I am including below a quote from that site:
 
